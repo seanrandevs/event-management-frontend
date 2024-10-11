@@ -1,12 +1,29 @@
 .navbar .container {
     margin: 0;
-    padding: 0 4rem;
+    padding: 0 2rem;
     max-width: 100%;
     justify-content: space-evenly;
 }
 .navbar .container .nav-link {
-    margin: 0 4rem;
-} */
-.navbar .container .me-2 {
-    width: 350px;
+    margin: 0 2rem;
+}
+.d-flex{
+    margin: 0 auto;
+    max-width: 500px;
+}
+.homepage{
+    text-align: center;
+    padding-top: 3rem;
+}
+.homepage h1 {
+    margin-top: 2rem;
+}
+.logo, .account-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+.account-logo{
+    margin-right: 1rem;
+    cursor: pointer;
 }
