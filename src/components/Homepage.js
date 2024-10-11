@@ -5,8 +5,12 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import cardImg from '../assets/images/events-pic.jpg';
+import HomeImg from '../assets/images/events-home.jpg'
+import Footer from "./Footer";
 
 const Homepage = () => {
+
   return (
     <>
     <NavBar />
@@ -30,7 +34,7 @@ const Homepage = () => {
       {Array.from({ length: 6 }).map((_, idx) => (
         <Col key={idx}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src={cardImg} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
@@ -44,8 +48,12 @@ const Homepage = () => {
       ))}
     </Row>
       </div>
-
+      
     </Container>
+    <div className="image-container">
+      <img className="bottom-image" src={HomeImg} alt="Event" />
+    </div>
+    <Footer />
     </>
   );
 };
