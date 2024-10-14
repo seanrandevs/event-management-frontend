@@ -2,12 +2,10 @@ import NavBar from "./Nav_bar";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import cardImg from '../assets/images/events-pic.jpg';
+import HomeEvents from "./HomeEvents";
 import HomeImg from '../assets/images/events-home.jpg'
 import Footer from "./Footer";
+import HomeCarousel from "./HomeCarousel";
 
 const Homepage = () => {
 
@@ -16,6 +14,7 @@ const Homepage = () => {
     <NavBar />
     <Container>
       <div className="homepage">
+        <HomeCarousel />
       <h1>Welcome to EventSnap</h1>
       <p>Explore upcoming events, manage RSVPs, and more.</p>
       <Form className="d-flex">
@@ -30,23 +29,7 @@ const Homepage = () => {
       </div>
       <div className="upcoming-events">
         <h2>Upcoming Events</h2>
-        <Row xs={1} md={2} className="g-4">
-      {Array.from({ length: 6 }).map((_, idx) => (
-        <Col key={idx}>
-          <Card>
-            <Card.Img variant="top" src={cardImg} />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
+         <HomeEvents />
       </div>
       
     </Container>
