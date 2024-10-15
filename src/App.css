@@ -7,6 +7,9 @@
 .navbar .container .nav-link {
     margin: 0 2rem;
 }
+.navbar-brand {
+    font-family: "Caveat", cursive;
+}
 .d-flex{
     margin: 0 auto;
     max-width: 500px;
@@ -54,11 +57,36 @@
     max-height: 450px;
     margin: 0 auto;
 }
-.right{
+.footer {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 4rem;
+}
+.right{
+    display: flex;
 }
 .helpful-links ul, .about-us ul {
     list-style-type: none;
     padding: 0;
+}
+.helpful-links, .about-us {
+  margin: 0 2rem;
+}
+.left h4 {
+    font-family: "Caveat", cursive;
+}
+.footer-logo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.footer-logo .logo {
+    margin: 0;
+}
+.footer-icons {
+    display: flex;
+}
+.footer-icon {
+    margin: 0 0.2rem;
+    font-size: 1.5rem;
 }
