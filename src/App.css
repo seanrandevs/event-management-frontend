@@ -110,18 +110,38 @@
 .creator h6{
     padding-left: 0.3rem;
 }
+/* Event page */
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.event h2 {
+    padding: 3rem 0;
+}
+.time-date {
+    display: flex;
+}
+.time-date h5 {
+    font-size: 1rem;
+    padding: 1rem;
+}
+ .event img {
+   max-width: 800px;
+   max-height: 600px;
+ }
 
-
-
+  /* Loading Homepage Animation */
 .animate {
     opacity: 0;
-    transform: translateY(20px); /* Starts from 20px below the original position */
+    transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
   }
   
   .animate.show {
     opacity: 1;
-    transform: translateY(0); /* Moves to its original position */
+    transform: translateY(0);
   }
   /* Slide from the left */
 .slide-left {

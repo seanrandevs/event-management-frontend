@@ -9,7 +9,7 @@ import HomeCarousel from "./HomeCarousel";
 
 const Homepage = () => {
 
-
+    // Fuctions for loading homepage  
   window.addEventListener('load', function() {
     // Get all elements with the 'animate' class
     const components = document.querySelectorAll('.animate');
