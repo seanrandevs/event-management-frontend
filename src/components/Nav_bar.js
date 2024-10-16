@@ -5,7 +5,7 @@ import { VscAccount, VscTerminalDebian  } from "react-icons/vsc";
 
 const Nav_bar = () => {
   return (
-    <div>
+    <div className="animate">
       <Navbar bg="light" data-bs-theme="light">
         <Container>
         <VscTerminalDebian className="logo" />

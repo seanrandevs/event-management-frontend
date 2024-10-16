@@ -5,6 +5,7 @@ import Carousel1 from '../assets/images/carousel1.jpg'
 
 const HomeCarousel = () => {
   return (
+    <div className="animate">
     <Carousel>
       <Carousel.Item>
       <img
@@ -42,6 +43,7 @@ const HomeCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   )
 }
 
