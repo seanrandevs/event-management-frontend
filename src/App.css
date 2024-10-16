@@ -25,14 +25,15 @@
     margin-bottom: 2rem;
 }
 .image-container {
-    padding: 4rem 0.5rem 0 0.5rem;
+    padding: 4rem 0.5rem 2rem 0.5rem;
     width: 100%;
-    height: 90vh;
+    max-height: 90vh;
   }
   .bottom-image {
     width: 100%;
-    height: 90%;
-    object-fit: cover; 
+    max-width: 100%;
+    height: auto;
+    max-height: 650px;
   }
 .logo, .account-logo {
     width: 30px;
@@ -57,10 +58,14 @@
     max-height: 450px;
     margin: 0 auto;
 }
+.footer-background {
+    background-color: #1f1e1e;
+    color: #fff;
+    padding-top: 4rem;
+}
 .footer {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 4rem;
 }
 .right{
     display: flex;
@@ -72,8 +77,12 @@
 .helpful-links, .about-us {
   margin: 0 2rem;
 }
+.left{
+    margin-left: 0.5rem;
+}
 .left h4 {
     font-family: "Caveat", cursive;
+    font-size: 1.7rem;
 }
 .footer-logo {
     display: flex;
@@ -88,5 +97,15 @@
 }
 .footer-icon {
     margin: 0 0.2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+.creator{
+    margin: 0 0.7rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: end;
+}
+.creator h6{
+    font-family: "Caveat", cursive;
+    padding-left: 0.3rem;
 }

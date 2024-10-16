@@ -3,6 +3,7 @@ import { FaInstagramSquare, FaYoutube, FaFacebookSquare, FaTwitter   } from "rea
 
 const Footer = () => {
   return (
+    <div className="footer-background">
     <div className="footer">
       <div className="left">
         <div className="footer-logo">
@@ -12,7 +13,7 @@ const Footer = () => {
         <div className="foorter-icons">
           <FaInstagramSquare className="footer-icon" />
           <FaYoutube className="footer-icon"/>
-          <FaFacebookSquare className="footer-icon"/>
+          <FaFacebookSquare  className="footer-icon"/>
           <FaTwitter className="footer-icon"/>
         </div>
 
@@ -35,9 +36,10 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      {/* <hr style={{ border: '1px solid #000000' }} /> */}
     </div>
-
+    <hr style={{ border: '1px solid #ffff' }} />
+    <h5 className="creator">Created by <h6>Sean Ransonet</h6></h5>
+    </div>
   )
 }
 export default Footer
