@@ -3,7 +3,7 @@ import { FaInstagramSquare, FaYoutube, FaFacebookSquare, FaTwitter   } from "rea
 
 const Footer = () => {
   return (
-    <div className="footer-background slide-right">
+    <div className="footer-background">
     <div className="footer">
       <div className="left">
         <div className="footer-logo">

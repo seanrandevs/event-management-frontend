@@ -112,24 +112,30 @@
 }
 /* Event page */
 .event {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 .event h2 {
     padding: 3rem 0;
 }
-.time-date {
+.time-date-location, .attending {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.time-date h5 {
+.time-date-location h5 {
     font-size: 1rem;
     padding: 1rem;
 }
  .event img {
    max-width: 800px;
    max-height: 600px;
+ }
+ .description {
+    max-width: 800px;
+    margin: 3rem auto;
+ }
+ .attending h6{
+ margin: 0;
  }
 
   /* Loading Homepage Animation */
