@@ -137,6 +137,17 @@
  .attending h6{
  margin: 0;
  }
+ .event-page .row {
+    margin:  5rem 2rem;
+ }
+ .event-page h1 {
+    text-align: center;
+    padding: 3rem 0;
+ }
+ .contact-page form {
+    max-width: 800px;
+    margin: 4rem auto;
+ }
 
   /* Loading Homepage Animation */
 .animate {

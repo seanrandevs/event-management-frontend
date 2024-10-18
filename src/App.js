@@ -1,11 +1,12 @@
 // import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Homepage from './components/Homepage';
+// import Homepage from './components/Homepage';
+import ContactPage from './components/ContactPage';
 
 function App() {
     return (
-      // <Event />
-      <Homepage />
+      <ContactPage />
+      // <Homepage />
         // <Routes>
         //   <Route path='/' element={Homepage}/>
         // </Routes>
