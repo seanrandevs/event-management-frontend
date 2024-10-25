@@ -6,6 +6,8 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import cardImg from '../assets/images/events-pic.jpg';
+import { Link } from "react-router-dom";
+
 const EventsPage = () => {
   return (
     <div className="event-page">
@@ -22,6 +24,7 @@ const EventsPage = () => {
             </Form>
         <Row xs={1} md={3} className="g-5">
           {Array.from({ length: 9 }).map((_, idx) => (
+          <Link to="/event">
             <Col key={idx}>
               <Card>
                 <Card.Img variant="top" src={cardImg} />
@@ -35,6 +38,7 @@ const EventsPage = () => {
                 </Card.Body>
               </Card>
             </Col>
+            </Link>
           ))}
         </Row>
       <Footer />

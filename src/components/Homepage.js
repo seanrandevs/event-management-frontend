@@ -6,40 +6,36 @@ import HomeEvents from "./HomeEvents";
 import HomeImg from '../assets/images/events-home.jpg'
 import Footer from "./Footer";
 import HomeCarousel from "./HomeCarousel";
+import { useEffect } from 'react';
+
 
 const Homepage = () => {
 
-    // Fuctions for loading homepage  
-  window.addEventListener('load', function() {
-    // Get all elements with the 'animate' class
+  useEffect(() => {
     const components = document.querySelectorAll('.animate');
-    
-    // Add 'show' class to each component after a slight delay
     components.forEach((component, index) => {
       setTimeout(() => {
         component.classList.add('show');
-      }, index * 200); // Adds delay for each component (200ms stagger effect)
+      }, index * 200);
     });
-  });
 
-  window.addEventListener('load', function() {
     const leftComponents = document.querySelectorAll('.slide-left');
     const rightComponents = document.querySelectorAll('.slide-right');
-    
-    // Stagger the loading of left components
+
     leftComponents.forEach((component, index) => {
       setTimeout(() => {
         component.classList.add('show');
       }, index * 200);
     });
-    
-    // Stagger the loading of right components
+
     rightComponents.forEach((component, index) => {
       setTimeout(() => {
         component.classList.add('show');
-      }, index * 200 + 400); // 400ms delay added to right components for effect
+      }, index * 200 + 400);
     });
-  });
+  }, []);
+
+
 
   return (
     <>

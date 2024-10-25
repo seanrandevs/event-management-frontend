@@ -1,6 +1,9 @@
 .footer-icon, .card, .helpful-links ul, .about-us ul {
     cursor: pointer;
 }
+.helpful-links a, .navbar a {
+    text-decoration: none;
+}
 .navbar .container {
     margin: 0;
     padding: 0 2rem;
@@ -12,6 +15,9 @@
 }
 .navbar-brand, .creator h6, .left h4 {
     font-family: "Caveat", cursive;
+}
+.me-auto a {
+    color: #000000;
 }
 .d-flex{
     margin: 0 auto;
@@ -80,6 +86,9 @@
 .helpful-links, .about-us {
   margin: 0 2rem;
 }
+.helpful-links a {
+    color: #ffff;
+}
 .left{
     margin-left: 0.5rem;
 }
@@ -127,8 +136,11 @@
     padding: 1rem;
 }
  .event img {
-   max-width: 800px;
-   max-height: 600px;
+   margin: 0 auto;
+   width: 700px;
+   max-width: 100%;
+   height: auto;
+   display: block;
  }
  .description {
     max-width: 800px;
@@ -147,7 +159,32 @@
  .contact-page form {
     max-width: 800px;
     margin: 4rem auto;
+    padding: 0 0.5rem
  }
+ .contact {
+    background-color: lightgray;
+    height: 350px;
+ }
+ .contact h1 {
+    text-align: center;
+    padding: 2.5rem 0;
+ }
+ .contacts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+.contacts .icons {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1rem;
+}
+.email, .mailbox, .phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
   /* Loading Homepage Animation */
 .animate {
@@ -183,3 +220,71 @@
     opacity: 1;
     transform: translateX(0);
   }
+  /* Media Styling */
+  @media screen and (max-width: 700px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+     }
+     .contact {
+        background-color: lightgray;
+        height: 500px;
+     }
+  }
+
+
+/* Modal CSS */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="email"] {
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  

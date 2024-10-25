@@ -1,15 +1,51 @@
-// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-// import Homepage from './components/Homepage';
-import ContactPage from './components/ContactPage';
+import Homepage from './components/Homepage';
+import EventsPage from './components/EventsPage'
+import Event from './components/Event'
+import ContactPage from './components/ContactPage'
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import SignupPopup from './components/SignupPopup';
 
 function App() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Automatically show the modal after 3 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsModalOpen(true);
+    }, 3000); // Show the modal after 3 seconds
+
+    return () => clearTimeout(timer); // Cleanup the timer when component unmounts
+  }, []);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const ScrollToTop = (props) => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+  
+    return <>{props.children}</>
+  };
+
     return (
-      <ContactPage />
-      // <Homepage />
-        // <Routes>
-        //   <Route path='/' element={Homepage}/>
-        // </Routes>
+      <div>
+         <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Homepage />}/>
+          <Route path="/eventspage" element={<EventsPage />}/>
+          <Route path="/event" element={<Event />}/>
+          <Route path="/contact" element={ <ContactPage />}/>
+          <Route path="/sipnuppopup" element={ <SignupPopup isOpen={isModalOpen} onClose={closeModal} />}/>
+        </Routes>
+        </ScrollToTop>
+      </div>
     );
 }
 

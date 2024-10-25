@@ -1,5 +1,6 @@
 import { VscTerminalDebian  } from "react-icons/vsc";
 import { FaInstagramSquare, FaYoutube, FaFacebookSquare, FaTwitter   } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
           <ul>
             <li>Help/FAQ</li>
             <li>My Account</li>
-            <li>Contact Us</li>
+            <Link to="/contact"><li>Contact Us</li></Link>
           </ul>
         </div>
         <div className="about-us">
