@@ -1,6 +1,7 @@
 .footer-icon, .card, .helpful-links ul, .about-us ul {
     cursor: pointer;
 }
+
 .helpful-links a, .navbar a {
     text-decoration: none;
 }
@@ -16,7 +17,7 @@
 .navbar-brand, .creator h6, .left h4 {
     font-family: "Caveat", cursive;
 }
-.me-auto a {
+.me-auto a, .login-container a {
     color: #000000;
 }
 .d-flex{
@@ -48,6 +49,7 @@
     width: 30px;
     height: 30px;
     margin-right: 0.5rem;
+    color: #000000;
 }
 .account-logo{
     margin-right: 1rem;
@@ -102,6 +104,7 @@
 
 .footer-logo .logo {
     margin: 0;
+    color: #ffff;
 }
 .footer-icons {
     display: flex;
@@ -287,4 +290,53 @@
     border-radius: 4px;
     border: 1px solid #ccc;
   }
+
+  .login-container {
+    margin: 0 auto;
+    height: 100vh;
+    padding: 50px;
+    max-width: 500px;
+    background-color: #faf9f9;
+    text-align: center;
+  }
   
+  .login-header {
+    color: #faf9f9;
+    font-size: 18px;
+    background-color: #e07a5f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    }
+  
+    .login-container form {
+      margin: 1.5rem 0 1rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-container input {
+      padding: 15px;
+      border: 1px lightgray solid;
+      border-radius: 10px;
+      width: 375px;
+      margin: 7px;
+    }
+  
+    .login-container .btn {
+      padding: 15px;
+      border: 1px lightgray solid;
+      border-radius: 10px;
+      width: 375px;
+      margin: 7px;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: .02rem;
+      margin-top: 30px;
+      background-color: #00a8e8;
+      color: #faf9f9;
+      cursor: pointer;
+    }

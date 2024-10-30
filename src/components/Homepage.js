@@ -53,7 +53,7 @@ const Homepage = () => {
                 aria-label="Search"
               />
               <Button variant="outline-success">Search</Button>
-            </Form>
+      </Form>
       </div>
       <div className="upcoming-events slide-right">
         <h2>Upcoming Events</h2>

@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="helpful-links">
           <h5>Helpful Links</h5>
           <ul>
-            <li>Help/FAQ</li>
+            <li>Help/FQA</li>
             <li>My Account</li>
             <Link to="/contact"><li>Contact Us</li></Link>
           </ul>

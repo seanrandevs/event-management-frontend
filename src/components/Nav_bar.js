@@ -17,7 +17,9 @@ const Nav_bar = () => {
           <Link to="/eventspage">Browse Events</Link>
           </Nav>
         </Container>
+        <Link to="/login">
         <VscAccount className="account-logo" />
+        </Link>
       </Navbar>
     </div>
   )

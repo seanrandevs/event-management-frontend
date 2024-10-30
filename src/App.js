@@ -1,9 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Homepage from './components/Homepage';
-import EventsPage from './components/EventsPage'
-import Event from './components/Event'
-import ContactPage from './components/ContactPage'
+import EventsPage from './components/EventsPage';
+import Event from './components/Event';
+import ContactPage from './components/ContactPage';
+import Signup from './components/Signup';
+import LoginForm from './components/LoginForm';
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import SignupPopup from './components/SignupPopup';
@@ -42,6 +44,8 @@ function App() {
           <Route path="/eventspage" element={<EventsPage />}/>
           <Route path="/event" element={<Event />}/>
           <Route path="/contact" element={ <ContactPage />}/>
+          <Route path="/login" element={ <LoginForm />}/>
+          <Route path="/signup" element={ <Signup />}/>
           <Route path="/sipnuppopup" element={ <SignupPopup isOpen={isModalOpen} onClose={closeModal} />}/>
         </Routes>
         </ScrollToTop>
