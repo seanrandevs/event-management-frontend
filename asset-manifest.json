@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/event-management-frontend/static/css/main.051c72bd.css",
+    "main.js": "/event-management-frontend/static/js/main.de7b4d69.js",
+    "static/js/453.24ce6f11.chunk.js": "/event-management-frontend/static/js/453.24ce6f11.chunk.js",
+    "static/media/events-pic.jpg": "/event-management-frontend/static/media/events-pic.e41011dba892661edc02.jpg",
+    "static/media/carousel3.jpg": "/event-management-frontend/static/media/carousel3.80c195b4d8937cd109f4.jpg",
+    "static/media/carousel1.jpg": "/event-management-frontend/static/media/carousel1.4f5698132a012a954893.jpg",
+    "static/media/carousel2.jpg": "/event-management-frontend/static/media/carousel2.3e8f6b18149a33601ffd.jpg",
+    "static/media/events-home.jpg": "/event-management-frontend/static/media/events-home.fd5ea86101676499e5a9.jpg",
+    "index.html": "/event-management-frontend/index.html",
+    "main.051c72bd.css.map": "/event-management-frontend/static/css/main.051c72bd.css.map",
+    "main.de7b4d69.js.map": "/event-management-frontend/static/js/main.de7b4d69.js.map",
+    "453.24ce6f11.chunk.js.map": "/event-management-frontend/static/js/453.24ce6f11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.051c72bd.css",
+    "static/js/main.de7b4d69.js"
+  ]
+}
